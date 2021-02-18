@@ -8,7 +8,6 @@
 /* generals */
 body{
   height: 100vh;
-  background-color: green;
 }
 /* /generals */
 
@@ -28,12 +27,27 @@ body{
 }
 /* /aside_section */
 
+/* upgrade_section */
+.upgrade_section{
+  color: white;
+  background-color: rgba(8, 11, 18, 0.8);
+  position: fixed;
+  top:0;
+  right: 0;
+  width: calc(100% - 200px);
+  height: 70px;
+}
+/* /upgrade_section */
+
 
 /* core_section */
 .core_section{
   width: calc(100% - 200px);
   height: 100%;
-  background-color: orange;
+  background-color:rgb(20, 25, 34);
+  color: white;
+  overflow: auto;
+  padding-top: 70px;
 }
 /* /core_section */
 
