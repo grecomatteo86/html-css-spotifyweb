@@ -50,9 +50,6 @@ body{
 
 
 /* logo_icons_section */
-.nav_section{
-  background-color: red;
-}
 .spoty_logo{
   font-size: 40px;
   padding: 15px;
@@ -82,16 +79,37 @@ h1{
   overflow: hidden;
 }
 .cta_section{
-  background-color: yellow;
-  height: 70px;
+  height: 110px;
+}
+.cta_section h3{
+  color:#fff;
+  font-size: 15px;
+  font-weight:900;
+  padding: 15px;
+}
+.cta_playlist{
+  padding-left: 15px;
 }
 .square{
   width: 50px;
   height: 50px;
   background-color: rgb(148, 148, 148);
+  position: relative;
+}
+.plus{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  font-size: 25px;
+}
+.cta_playlist .main{
+  font-size: 15px;
+  padding-left: 15px;
 }
 .playlist_container{
-  height: calc(100% - 70px);
+  height: calc(100% - 110px);
   overflow: auto;
 }
 /* /cta_playlist_section */
