@@ -75,7 +75,6 @@ h1{
 
 /* cta_playlist_section */
 .cta_playlist_section{
-  background-color: blue;
   overflow: hidden;
 }
 .cta_section{
@@ -111,6 +110,12 @@ h1{
 .playlist_container{
   height: calc(100% - 110px);
   overflow: auto;
+}
+.playlist_container li{
+  list-style: none;
+}
+.name_list .link{
+  padding: 10px 15px;
 }
 /* /cta_playlist_section */
 
