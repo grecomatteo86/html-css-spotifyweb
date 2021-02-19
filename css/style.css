@@ -211,6 +211,12 @@ h1{
   .icons_list img{
     width: 100%;
   }
+  .lower_sec{
+    padding-left: 7.5px;
+  }
+  .lower_sec i{
+    width: 100%;
+  }
   h1,
   .copy,
   .icons_list p,
