@@ -74,6 +74,9 @@ h1{
   width: 25%;
   filter: invert(0.5);
 }
+.icons_list p{
+  padding-top: 10px;
+}
 /* /logo_icons_section */
 
 
@@ -129,7 +132,7 @@ h1{
   margin-top: auto;
 }
 .upper_sec{
-  padding: 0 0 10px 15px;
+  padding: 10px 0 10px 15px;
 }
 .upper_sec i{
   padding-right: 10px;
@@ -183,6 +186,24 @@ h1{
   z-index: 10;
 }
 /* /footer_section */
+
+/* hover */
+.turned_off:hover{
+  color: #fff;
+}
+.turned_off:hover .ico{
+  filter: invert(1);
+}
+.cta_playlist:hover .square{
+  background-color: #fff;
+}
+.cta_playlist:hover p{
+  color: #fff;
+}
+.upper_sec:hover i{
+  color: #fff;
+}
+/* /hover */
 
 
 /* responsiveness */
