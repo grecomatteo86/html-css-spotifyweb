@@ -196,9 +196,31 @@ h1{
 
 @media Screen and (max-width:576px) {
 
+  /* aside_section */
   .aside_section{
     width: 50px;
   }
+  .spoty_logo{
+    font-size: 25px;
+    width: 100%;
+    padding-left: 10px;
+  }
+  .icons_section{
+    padding-top: 0;
+  }
+  .icons_list img{
+    width: 100%;
+  }
+  h1,
+  .copy,
+  .icons_list p,
+  .cta_playlist_section,
+  .upper_sec p,
+  .separator,
+  .lower_sec p{
+    display: none;
+  }
+  /* /aside_section */
 
   .core_section{
     width: 100%;
