@@ -17,7 +17,12 @@ body{
 .center{
   align-items: center;
 }
-.main{
+.turned_on{
+  font-size: 15px;
+  color:#fff;
+  font-weight:900;
+}
+.turned_off{
   color:rgb(99, 102, 106);
   font-size: 13px;
   font-weight: 700;
@@ -81,9 +86,6 @@ h1{
   height: 110px;
 }
 .cta_section h3{
-  color:#fff;
-  font-size: 15px;
-  font-weight:900;
   padding: 15px;
 }
 .cta_playlist{
@@ -103,7 +105,7 @@ h1{
   color: #000;
   font-size: 25px;
 }
-.cta_playlist .main{
+.cta_playlist .turned_off{
   font-size: 15px;
   padding-left: 15px;
 }
@@ -123,8 +125,27 @@ h1{
 
 /* current_singer_section */
 .current_singer_section{
-  background-color: green;
+  /* background-color: green; */
   margin-top: auto;
+}
+.upper_sec{
+  padding: 0 0 10px 15px;
+}
+.upper_sec i{
+  padding-right: 10px;
+}
+.separator{
+  width: 170px;
+  margin: auto;
+  height: 2px;
+  background-color: rgb(99, 102, 106);
+}
+.lower_sec{
+  padding: 10px 0 5px 15px;
+}
+.lower_sec i{
+  font-size: 30px;
+  padding-right: 10px;
 }
 /* /current_singer_section */
 
