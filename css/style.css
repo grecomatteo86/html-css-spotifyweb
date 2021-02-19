@@ -14,9 +14,13 @@ body{
 .flex{
   display: flex;
 }
-.main_title{
+.center{
+  align-items: center;
+}
+.main{
   color:rgb(99, 102, 106);
-  font-size: 10px;
+  font-size: 13px;
+  font-weight: 700;
 }
 .link{
   text-decoration: none;
@@ -43,20 +47,37 @@ body{
 /* /aside_section */
 
 
-/* nav_section */
+
+
+/* logo_icons_section */
 .nav_section{
   background-color: red;
 }
+.spoty_logo{
+  font-size: 40px;
+  padding: 15px;
+}
+h1{
+  font-size: 30px;
+  font-weight: 800;
+}
+.copy{
+  font-size: 8px;
+  padding:0 0 20px 5px;;
+}
+.icons_section{
+  padding: 10px 0;
+}
 .ico{
-  width: 20%;
+  width: 25%;
   filter: invert(0.5);
 }
-/* /nav_section */
+/* /logo_icons_section */
 
 
 
-/* playlist_section */
-.playlist_section{
+/* cta_playlist_section */
+.cta_playlist_section{
   background-color: blue;
   overflow: hidden;
 }
@@ -73,7 +94,7 @@ body{
   height: calc(100% - 70px);
   overflow: auto;
 }
-/* /playlist_section */
+/* /cta_playlist_section */
 
 
 
