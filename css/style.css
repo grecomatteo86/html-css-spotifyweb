@@ -259,6 +259,33 @@ body{
   font-size: 15px;
   font-weight: 600;
 }
+/* overlay */
+.img_container{
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.img_container:hover .overlay{
+  display: block;
+}
+.play{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 50px;
+}
+.most_popular_section .overlay{
+  border-radius: 50%
+}
+/* /overlay */
 /* /core_section */
 
 
