@@ -30,6 +30,12 @@ body{
 .link{
   text-decoration: none;
 }
+.text_center{
+  text-align: center;
+}
+.radius{
+  border-radius: 50%;
+}
 /* /generals */
 
 
@@ -110,7 +116,7 @@ body{
 }
 .playlist_container{
   height: calc(100% - 110px);
-  overflow: auto;
+  overflow-y: auto;
 }
 .playlist_container li{
   list-style: none;
@@ -216,6 +222,43 @@ body{
   height: 1px;
   background-color: rgb(173, 250, 68);
 }
+.recently_played_section{
+  padding-top: 10px;
+}
+.recently_played_section,.customized_section,.most_popular_section{
+  margin: 0 10px;
+}
+.album{
+  margin: 10px;
+  flex-basis: calc(100% / 6 - 20px);
+}
+.albums_container{
+  margin: 0 -10px;
+  flex-wrap: wrap;
+}
+.core_section h2{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+.core_section .turned_off{
+  font-size: 10px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+.customized_section .turned_off,.most_popular_section .turned_off{
+  padding: 5px 0;
+}
+.album img{
+  width: 100%;
+}
+.subtitles{
+  padding: 10px 0;
+}
+.subtitles .turned_on{
+  font-size: 15px;
+  font-weight: 600;
+}
 /* /core_section */
 
 
@@ -267,6 +310,9 @@ body{
     flex-basis: calc(20% - 20px);
     text-align: center;
   }
+  .albums_container .album{
+    flex-basis: calc(100% / 4 - 20px);
+  }
   /* /core_section */
 
 }
@@ -276,6 +322,9 @@ body{
   /* core_section */
   .navigation_section li{
     flex-basis: calc(33.3% - 20px);
+  }
+  .albums_container .album{
+    flex-basis: calc(100% / 2 - 20px);
   }
   /* /core_section */
 
