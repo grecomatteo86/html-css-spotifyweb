@@ -444,7 +444,8 @@ time{
 .full_bar:hover{
   background-color: rgb(173, 250, 68);
 }
-.full_bar:hover .dot{
+.lower_media_player:hover .dot,
+.volume_bar:hover .dot{
   display: block;
 }
 /* /hover */
