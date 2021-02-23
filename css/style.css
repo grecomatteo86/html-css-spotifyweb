@@ -367,6 +367,7 @@ body{
 }
 .lower_media_player{
   margin: 10px 0;
+  position: relative;
 }
 time{
   font-size: 10px;
@@ -382,10 +383,29 @@ time{
 .full_bar{
   width: 30%;
   height: 100%;
-  background-color: rgb(173, 250, 68);
+  background-color: rgb(201, 201, 201);
+}
+.dot{
+  width: 10px;
+  height: 10px;
+  background-color: rgb(201, 201, 201);
+  border-radius: 50%;
+  position: absolute;
+  top:15%;
+  left:33%;
+  display: none;
+}
+.dot_2{
+  width: 8px;
+  height: 8px;
+  top:45%;
+  left:48%;
 }
 /* /center_footer */
 /* right_footer */
+.right_footer_section{
+  position: relative;
+}
 .right_list i{
   margin: 0 5px;
   font-size: 10px;
@@ -413,12 +433,19 @@ time{
 .upper_sec:hover img{
   filter: invert(0);
 }
-.button:hover{
+.button:hover,
+.play_button:hover{
   transform: scale(1.1);
 }
 .heart:hover,
 .folder:hover{
   color: #fff;
+}
+.full_bar:hover{
+  background-color: rgb(173, 250, 68);
+}
+.full_bar:hover .dot{
+  display: block;
 }
 /* /hover */
 /*active*/
