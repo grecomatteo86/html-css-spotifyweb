@@ -448,17 +448,12 @@ time{
 .volume_bar:hover .dot{
   display: block;
 }
-/* /hover */
-/*active*/
-.icons_section .icons_list .turned_off:active{
+.icons_section .icons_list .turned_off:hover{
   border-left: 3px solid rgb(173, 250, 68);
 }
-.core_section li:active .border_bottom{
+.core_section li:hover .border_bottom{
   display: block;
 }
-/*/active*/
-
-
 /* responsiveness */
 @media Screen and (max-width:1100px) {
 
