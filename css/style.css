@@ -554,7 +554,27 @@ time{
     flex-basis: calc(25% - 20px);
   }
   /* /core_section */
-
+  /* footer_section */
+  .footer_section{
+    flex-wrap: wrap;
+  }
+  .center_footer_section{
+    order: -1;
+    width: 100%;
+    margin: 0;
+  }
+  .right_footer_section,.left_footer_section{
+    width: 50%;
+    order: 2;
+    margin: auto;
+  }
+  .lower_media_player{
+    margin: auto;
+  }
+  .left_footer_section,.right_footer_section{
+    align-content: space-between;
+  }
+  /* /footer_section */
 
 }
 /* /responsiveness */
