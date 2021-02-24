@@ -94,25 +94,32 @@ body{
   font-weight: 700;
 }
 .cta_playlist{
-  padding-left: 15px;
+  position: relative;
 }
-.square{
+.cta_playlist::before{
   width: 50px;
   height: 50px;
   background-color: rgb(148, 148, 148);
-  position: relative;
-}
-.plus{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%,-50%);
-  color: #000;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f067";
+  color:#000;
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:0;
+  left: 8%;
+}
+.cta_section:hover .cta_playlist::before{
+  background-color: white;
 }
 .cta_playlist .turned_off{
   font-size: 15px;
-  padding-left: 15px;
+  position: absolute;
+  padding-top: 50px;
+  left: 40%;
 }
 .playlist_container{
   height: calc(100% - 110px);
@@ -426,9 +433,6 @@ time{
 }
 .turned_off:hover .ico{
   filter: invert(1);
-}
-.cta_playlist:hover .square{
-  background-color: #fff;
 }
 .cta_playlist:hover p{
   color: #fff;
