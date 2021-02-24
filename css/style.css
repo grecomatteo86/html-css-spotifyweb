@@ -252,7 +252,7 @@ body{
 }
 .album img{
   width: 100%;
-  display: block;     /*& serve a togliere quei 4px dell'immagine sull'overlay &*/
+  display: block;
 }
 .subtitles{
   padding: 10px 0;
@@ -264,37 +264,40 @@ body{
 /* overlay */
 .img_container{
   position: relative;
+  overflow: hidden;
 }
-.overlay{             /*& serve a togliere quei 4px dell'immagine sull'overlay &*/
+.img_container::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f144";
+  color:#fff;
+  font-size: 50px;
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
-  right:0;
-  left:0;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: 0.5s all ease-out;
+  opacity: 0;
 }
-.img_container:hover .overlay{
-  display: block;
+.album:hover .img_container::before{
+  transform: rotate(360deg);
+  opacity: 1;
+  font-size: 80px;
 }
-.play{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  font-size: 50px;
-  color: #fff;
-}
-.most_popular_section .overlay{
+.most_popular_section .img_container::before{
   border-radius: 50%;
 }
+/* /overlay */
 .album h3{
   display:-webkit-box;
   -webkit-line-clamp:2;
   -webkit-box-orient:vertical;
   overflow: hidden;
 }
-/* /overlay */
 /* /core_section */
 
 
