@@ -168,7 +168,7 @@ body{
   border: none;
   background-color: transparent;
   margin-right: 15px;
-  transition: all 1s;
+  transition: all 2s;
 }
 .upgrade_section .turned_on{
   font-size: 10px;
